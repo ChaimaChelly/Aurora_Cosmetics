@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Cosmetics</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('../projet/images/fond5.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+        .navbar {
+            background-color: whitesmoke; 
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            color: white; 
+        }
+        .navbar-brand img {
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            margin-right: 10px; 
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: black; 
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #ffd3e6; 
+        }
+        .footer {
+            background-color: whitesmoke; 
+            color: #ff3e6c; 
+        }
+        .form-group label {
+            color: black; 
+            
+        }
+        .form-control {
+            border-color: #ff3e6c; 
+        }
+        .btn-primary {
+            background-color: #ff3e6c; 
+            border-color: #ff3e6c; 
+            
+        }
+        .btn-primary:hover {
+            background-color: #ff5d8f; 
+            border-color: #ff5d8f; 
+        }
+        .btn-secondary {
+            background-color: #ffd3e6; 
+            border-color: #ffd3e6; 
+            color: #ff3e6c;
+            
+        }
+        .btn-secondary:hover {
+            background-color: #ffebf2; 
+            border-color: #ffebf2; 
+            color: #ff5d8f; 
+        }
+        #a_propos p, #produits p {
+            text-align: justify; 
+        }
+        .footer p {
+            color: black; 
+            font-family: Ariel ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="../projet/images/logo.png" alt="Logo Aurora Cosmetics">AURORA COSMETICS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a_propos">A propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produits">Nos Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cnx">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <section id="a_propos">
+            <h2>A propos de nous</h2>
+            <p>Bienvenue dans notre destination de choix pour tous vos besoins en cosmétiques ! Chez AURORA COSMETICS, nous sommes dédiés à vous offrir une expérience d'achat fluide et agréable pour tous vos essentiels de beauté. Notre plateforme en ligne propose une large gamme de produits cosmétiques de haute qualité, soigneusement sélectionnés pour répondre aux préférences et aux désirs uniques de chacun. Notre site web convivial est conçu pour rendre votre expérience d'achat facile et agréable. Parcourez notre sélection diversifiée de produits, organisée de manière pratique en catégories pour vous aider à trouver exactement ce que vous cherchez. Chez AURORA COSMETICS, nous accordons la priorité à la satisfaction du client avant tout. Notre équipe dévouée s'engage à fournir un service exceptionnel, à assurer une livraison rapide et à offrir une assistance personnalisée à chaque étape du processus.</p>
+        </section>
+        <section id="produits">
+            <h2>Nos Produits</h2>
+            <p>Nous sommes fiers de vous présenter une sélection exquise de produits de soin pour le corps, de soins du visage, de maquillages et de produits spécialement conçus pour les hommes. Quel que soit votre besoin ou votre envie, notre boutique en ligne est votre destination incontournable pour découvrir des produits de qualité, des conseils d'experts et une expérience de shopping personnalisée. Faites-vous plaisir et explorez notre sélection dès aujourd'hui pour révéler votre beauté intérieure et extérieure.</p>
+        </section>
+        <section id="cnx">
+            <h2>Connexion</h2>
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" name="pwd" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <a href="ajouterclient.php" class="btn btn-secondary">Créer un compte</a>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Service Client : 50412596<br>Whatsapp : 589556923</p>
+        </section>
+    </main>
+    <footer class="footer mt-auto py-3 text-center">
+        <div class="container">
+            <p>&copy; 2024 AURORA COSMETICS. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
